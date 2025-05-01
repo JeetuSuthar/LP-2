@@ -6,7 +6,6 @@ class Graph:
         print("Edge \tWeight")
         for i in range(1,self.V):
             print(parent[i],"-",i,"\t",self.graph[parent[i]][i])
-    
     def minKey(self , key , mstSet):
         min_val=float('inf')
         min_index=-1
@@ -21,11 +20,9 @@ class Graph:
         key[0]=0
         mstSet=[False]*self.V
         parent[0]=-1
-        
         for _ in range(self.V):
             u=self.minKey(key,mstSet)
             mstSet[u]=True
-            
             for v in range(self.V):
                 if self.graph[u][v] >0 and not mstSet[v] and key[v]>self.graph[u][v]:
                     key[v]=self.graph[u][v]
