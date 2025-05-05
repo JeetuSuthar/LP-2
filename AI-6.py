@@ -10,29 +10,29 @@ def evaluate_employee():
     
     score = 0
 
-    # Rule 1: Punctuality
+ 
     if punctuality == 'yes':
         score += 2
     
-    # Rule 2: Project completion
+    
     if project_completion == 5:
         score += 4
     elif project_completion >= 3:
         score += 2
     
-    # Rule 3: Peer feedback
+    
     if peer_feedback == 'good':
         score += 2
     elif peer_feedback == 'average':
         score += 1
     
-    # Rule 4: Manager feedback
+   
     if manager_feedback == 'good':
         score += 3
     elif manager_feedback == 'average':
         score += 1
     
-    # Rule 5: Training sessions
+    
     if training_attended >= 3:
         score += 2
     elif training_attended >= 1:
